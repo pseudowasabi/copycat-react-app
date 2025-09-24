@@ -1,19 +1,21 @@
 import './App.css'
 
-const Card = () => {
+const Card = ({ title }) => {
     return (
         <div>
             <h2>Card Component</h2>
+            <h2>{title}</h2>
         </div>
     )
 }
 
 const App = () => {
     return (
-        <div>
+        <div className="card-container">
             <h2>Functional Arrow Component</h2>
-            <Card />
-            <Card />
+            <Card title="Spiderman: No way home" />
+            <Card title="Top Gun: Maverick" />
+            <Card title="F1: The movie" />
         </div>
     )
 }
